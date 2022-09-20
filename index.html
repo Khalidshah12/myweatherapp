@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather III</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c0b6ca2d16.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="liveFun()">
+
+    <div id="bcImageDiv">
+
+        <div id="searchBar">
+            <input id="searchInput" type="text" placeholder="Search your city here.....">
+            <button onclick="search()" id="searchButton">Search</button>
+        </div>
+
+        <div id="currentLocationDiv">
+            <button id="CurrentLocation">Current Location &nbsp; <i class="fa fa-map-marker"></i></button>
+        </div>
+
+        <div id="sw">SEARCH WEATHER</div>
+
+        <div id="allDetails">
+
+            <div id="weather"></div>
+
+            <div id="weather2"></div>
+
+            <!-- Google map api -->
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="400" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sevenDays"></div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="./index.js"></script>

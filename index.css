@@ -1,0 +1,169 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(https://images.pond5.com/bright-moon-starry-sky-cloud-photo-158109298_iconl_wide_nowm.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+
+#searchBar {
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+}
+
+#searchInput {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    background: transparent;
+    opacity: 2;
+
+}
+
+#searchButton {
+    cursor: pointer;
+    width: 15%;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#searchButton:hover {
+    background-color: tomato;
+}
+
+#currentLocationDiv {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+#CurrentLocation {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    cursor: pointer;
+    width: 15%;
+    height: 33px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    font-size: 16px;
+}
+
+#CurrentLocation:hover {
+    background-color: tomato;
+}
+
+#bcImageDiv {
+    width: 90%;
+    margin: auto
+}
+
+/* search weather text */
+#sw {
+    margin-top: 250px;
+    margin-left: 400px;
+    font-size: 48px;
+}
+
+/* all details of weather container*/
+#allDetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    margin-top: 20px;
+}
+
+/* details stored in this div */
+#weather {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* border: 1px solid black; */
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* remaining details stored in this div */
+#weather2 {
+    margin-top: 100px;
+    /* border: 1px solid black; */
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* city name */
+#city {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.smallDetails {
+    margin-top: -7px;
+}
+
+
+
+.mapouter {
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+
+#tempDiv {
+    display: flex;
+}
+
+#tempDiv>h3 {
+    padding-left: 10px;
+}
+
+#humidityDiv {
+    display: flex;
+}
+
+#windDiv {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-top: -5px;
+    margin-right: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#visibilityDiv {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+#feels_likeDiv,
+#sunriseDiv,
+#sunsetDiv,
+#cloudsDiv,
+#temp_maxDiv,
+#temp_minDiv,
+#pressureDiv {
+    display: flex;
+}
+
+#sevenDays {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
